@@ -34,10 +34,11 @@ pipeline {
                 environment name: 'SDLC_ENV', value: 'docker'
             }
             steps {
-                sh 'ssh -i /root/.ssh/id_rsa dockeradmin@65.2.80.214 ls /opt/docker/'
-                /*
                 sh 'scp -r dist dockeradmin@65.2.80.214:/opt/docker/'
                 sh 'ssh dockeradmin@65.2.80.214 cp /opt/docker/java-tomcat-sample/target/java-tomcat-maven-mysql.war /opt/docker/'
+                
+                /*
+                sh 'ssh -i /root/.ssh/id_rsa dockeradmin@65.2.80.214 ls /opt/docker/'
                 */
             }
         }
