@@ -61,7 +61,7 @@
   </dependency>
   </dependencies>
   <build>
-    <finalName>java-tomcat-maven-test</finalName>
+    <finalName>java-tomcat-maven-mysql</finalName>
     <plugins>
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
